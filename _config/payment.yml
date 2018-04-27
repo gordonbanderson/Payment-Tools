@@ -1,0 +1,7 @@
+---
+Name: paymenttools
+---
+
+Suilven\PaymentTools\Model\Payment:
+  extensions:
+    - SilverStripe\ORM\DataExtension\BelongsToFailedPaymentExtension

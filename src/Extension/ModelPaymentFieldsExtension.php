@@ -6,7 +6,7 @@
  * Time: 22:22 น.
  */
 
-namespace Suilven\PaymentTools;
+namespace Suilven\PaymentTools\Extension;
 
 
 use SilverStripe\ORM\DataExtension;

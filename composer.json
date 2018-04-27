@@ -45,5 +45,8 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "extra": {
+        "installer-name": "payment-tools"
     }
 }
