@@ -1,5 +1,5 @@
 {
-    "name": "suilven/paymentools",
+    "name": "suilven/silverstripe-paymentools",
     "type": "library",
     "description": "Tools to help with payment in SilverStripe and Omnipay",
     "keywords": [
