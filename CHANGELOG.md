@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.0.2](https://github.com/gordonbanderson/Payment-Tools/tree/1.0.2) (2018-04-28)
+[Full Changelog](https://github.com/gordonbanderson/Payment-Tools/compare/1.0.1...1.0.2)
+
 ## [1.0.1](https://github.com/gordonbanderson/Payment-Tools/tree/1.0.1) (2018-04-24)
 [Full Changelog](https://github.com/gordonbanderson/Payment-Tools/compare/1.0.0...1.0.1)
 
