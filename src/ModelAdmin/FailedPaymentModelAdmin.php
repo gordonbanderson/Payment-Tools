@@ -8,10 +8,9 @@
 
 namespace Suilven\PaymentTools\ModelAdmin;
 
-use SilverStripe\Omnipay\Model\Payment;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Admin\ModelAdmin;
 
-class FailedPaymentModelAdmin extends DataExtension
+class FailedPaymentModelAdmin extends ModelAdmin
 {
     private static $managed_models = [
         'Suilven\PaymentTools\Model\FailedPayment'
@@ -20,4 +19,17 @@ class FailedPaymentModelAdmin extends DataExtension
     private static $url_segment = 'failed-payments';
 
     private static $menu_title = 'Failed Payments';
+
+    public function getEditForm($id = null, $fields = null) {
+        $form = parent::getEditForm($id, $fields);
+
+        $form
+            ->Fields()
+            ->fieldByName($this->sanitiseClassName($this->modelClass))
+            ->getConfig()
+            ->removeComponentsByType('GridFieldDeleteAction')
+            ->removeComponentsByType('GridFieldAddNewButton');
+
+        return $form;
+    }
 }

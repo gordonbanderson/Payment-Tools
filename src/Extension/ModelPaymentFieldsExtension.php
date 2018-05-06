@@ -21,4 +21,6 @@ class ModelPaymentFieldsExtension extends DataExtension
     private static $db = [
         'PaymentStatus' => "Enum('Unpaid,Paid,Cancelled','Unpaid')"
     ];
+
+
 }
