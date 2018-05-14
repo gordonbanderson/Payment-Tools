@@ -84,13 +84,10 @@ class ModelArrayHelper
 
                 $saveMethod = "save{$field->getName()}";
                 if ($field->getName() == "ClassName") {
-                    echo "<br/>T1";
                     $lastField = $field;
                 } elseif ($dataObject->hasMethod($saveMethod)) {
-                    echo "<br/>T2";
                     $dataObject->$saveMethod($field->dataValue());
                 } elseif ($field->getName() !== "ID") {
-                    echo "<br/>T3";
                     if (isset($payload[$field->getName()])) {
                         $field->Value = $payload[$field->getName()];
                     }
